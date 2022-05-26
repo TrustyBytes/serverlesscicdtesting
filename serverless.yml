@@ -1,5 +1,5 @@
 org: shamariyan
-app: serverlesscicd
+app: cicd
 service: serverlesscicd
 frameworkVersion: '3'
 
