@@ -10,14 +10,9 @@ provider:
 functions:
   mainLambdaFunction:
     handler: main.mainFunction
-    url:
-      cors:
-        allowedOrigins:
-          - https://webhook-endpoint.herokuapp.com
-        allowedHeaders:
-          - Content-Type
-          - Authorization
-        allowedMethods:
-          - GET
+    events:
+      - httpApi: '*'
+  secondaryLambdaFunction:
+    handler: secondary.secondaryFunction
     events:
       - httpApi: '*'
