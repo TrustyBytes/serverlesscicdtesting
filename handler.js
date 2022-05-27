@@ -10,7 +10,7 @@ app.get('/', (req, res, next) => {
 
 app.get('/hello', (req, res, next) => {
 	return res.status(200).json({
-		message: 'Hello from Shamariyan',
+		message: 'Hello from Sharan',
 	});
 });
 
