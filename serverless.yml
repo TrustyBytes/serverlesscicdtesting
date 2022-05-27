@@ -10,9 +10,11 @@ provider:
 functions:
   mainLambdaFunction:
     handler: main.mainFunction
+    url: cors:true
     events:
       - httpApi: '*'
   secondaryLambdaFunction:
     handler: secondary.secondaryFunction
+    url: cors:true
     events:
       - httpApi: '*'
