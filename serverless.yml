@@ -13,7 +13,7 @@ functions:
     url:
       cors:
         allowedOrigins:
-          - https://webhook-endpoint.herokuapp.com/
+          - https://webhook-endpoint.herokuapp.com
         allowedHeaders:
           - Content-Type
           - Authorization
