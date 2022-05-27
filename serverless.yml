@@ -9,7 +9,7 @@ provider:
 
 functions:
   mainLambdaFunction:
-    handler: handler.main
+    handler: main.mainFunction
     url:
       cors:
         allowedOrigins:
