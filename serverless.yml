@@ -8,7 +8,16 @@ provider:
   runtime: nodejs14.x
 
 functions:
-  api:
-    handler: handler.handler
+  mainLambdaFunction:
+    handler: handler.main
+    url:
+      cors:
+        allowedOrigins:
+          - https://webhook-endpoint.herokuapp.com/
+        allowedHeaders:
+          - Content-Type
+          - Authorization
+        allowedMethods:
+          - GET
     events:
       - httpApi: '*'
