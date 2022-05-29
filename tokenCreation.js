@@ -22,8 +22,7 @@ app.get('/', async (req, res, next) => {
 	const body = JSON.stringify({
 		grant_type: 'authorization_code',
 		code: decodedParam,
-		redirect_uri:
-			'https://75sg56fhzb52arler4fzp3olam0lyjgc.lambda-url.ap-south-1.on.aws',
+		redirect_uri: 'https://1v7y9phwv5.execute-api.ap-south-1.amazonaws.com',
 	});
 	const config = {
 		headers: {
