@@ -7,15 +7,12 @@ provider:
   name: aws
   runtime: nodejs14.x
 
+plugins:
+  - serverless-offline
+
 functions:
-  mainLambdaFunction:
-    handler: main.mainFunction
-    url:
-      cors: true
-    events:
-      - httpApi: '*'
   secondaryLambdaFunction:
-    handler: secondary.secondaryFunction
+    handler: tokenCreation.authTokenCreation
     url:
       cors: true
     events:
