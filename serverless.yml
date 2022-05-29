@@ -11,8 +11,8 @@ plugins:
   - serverless-offline
 
 functions:
-  secondaryLambdaFunction:
-    handler: tokenCreation.authTokenCreation
+  qr8InitialLambdaFunctions:
+    handler: main.main
     url:
       cors: true
     events:
